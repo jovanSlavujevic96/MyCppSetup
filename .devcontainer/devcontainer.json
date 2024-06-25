@@ -1,0 +1,27 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "C++ Development Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools",
+                "ms-azuretools.vscode-docker",
+                "akiramiyakoda.cppincludeguard",
+                "spmeesseman.vscode-taskexplorer",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "containerEnv": {
+        // git ENV
+        "GIT_DISCOVERY_ACROSS_FILESYSTEM": "1"
+    }
+}
